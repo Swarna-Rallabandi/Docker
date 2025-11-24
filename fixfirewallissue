@@ -1,3 +1,4 @@
+docker run -d -p 8080:80 nginx 
 curl localhost:32773
 create firewall rule tcp : 32773, tag : ex1
 instance - edit -- networktag = add ex1
