@@ -1,0 +1,1 @@
+docker run -d -P --mount type volume,source=html-volume,target=/user/share/nginx/html nginx
