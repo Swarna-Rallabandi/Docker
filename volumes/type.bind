@@ -1,1 +1,4 @@
 docker run -d -P --mount type volume,source=html-volume,target=/user/share/nginx/html nginx
+
+
+docker run -d -P --name bind-mount2 --mount type=bind,source="$(pwd)"/swarnavolumes,target=/usr/share/nginx/html nginx
