@@ -14,3 +14,10 @@ docker run -d -P --name bind-mount2 --mount type=bind,source="$(pwd)"/swarnavolu
 
 
 docker logs containerid
+
+
+-------------------------
+docker run -d -P --name bind-mount3 --mount type=bind,source="$(pwd)"/swarnavolumes,target=/app nginx
+// here its mounted vm folder <=============> container app folder , if container app/file.1 
+changed automatically vm folder file also change,
+if I careate a file there in APP folder , same file iwll created in the vm location as well 
