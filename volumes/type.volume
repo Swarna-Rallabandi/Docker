@@ -12,6 +12,8 @@ docker run -d -P --mount type=volume,source="$(pwd)"/swarnavolumes,target=/user/
 
 docker run -d -P --name bind-mount2 --mount type=bind,source="$(pwd)"/swarnavolumes,target=/usr/share/nginx/html nginx
 
+docker run -d -P --name bind-mount2 --mount type=-v,source="$(pwd)"/swarnavolumes,target=/usr/share/nginx/html nginx
+
 
 docker logs containerid
 
