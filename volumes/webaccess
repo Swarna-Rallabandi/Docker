@@ -1,0 +1,14 @@
+docker run -d -P nginx
+docker run - start new contianer
+-d - run in detach mode (in backgroud)\
+- P - docker will assign random ports
+
+CONTAINER ID   IMAGE    PORTS
+ab123cde45     nginx    0.0.0.0:49155->80/tcp
+
+
+
+  now to access in the web http:\\externalip:49155
+
+  1. create a friewall rule 49155, add tag
+ 2. add that tage to network tags in vm
