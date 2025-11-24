@@ -1,1 +1,10 @@
-//for data percistent
+//for data percistent, mount nginx contianer "index.html" file ot the vm folder 
+
+if we update the index.html in vm folder -----> it will automaticallly update to the nginx container index.html
+
+volume or -v
+
+docker run -d -P --mount type=volume, soruce= ,target=, nginx
+
+
+docker run -d -P --mount type=volume,source="$(pwd)"/swarnavolumes,target=/user/share/nginx/html nginx
