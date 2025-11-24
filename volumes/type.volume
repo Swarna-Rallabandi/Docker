@@ -8,3 +8,6 @@ docker run -d -P --mount type=volume, soruce= ,target=, nginx
 
 
 docker run -d -P --mount type=volume,source="$(pwd)"/swarnavolumes,target=/user/share/nginx/html nginx
+
+
+docker run -d -P --name bind-mount2 --mount type=volume,source="$(pwd)"/swarnavolumes,target=/user/share/nginx/html nginx
