@@ -5,3 +5,11 @@ docker run - start new contianer
 
 CONTAINER ID   IMAGE    PORTS
 ab123cde45     nginx    0.0.0.0:49155->80/tcp
+
+
+
+  now to access in the web http:\\externalip:49155
+
+  1. create a friewall rule 49155, add tag
+ 2. add that tage to network tags in vm
+
